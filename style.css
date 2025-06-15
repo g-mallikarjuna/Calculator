@@ -90,4 +90,21 @@ button:hover {
        border: none;
        outline: none;
     }
- }
+   button:hover{
+      background-color:none;
+  }
+   button:active{
+      background-color:none;
+   }
+   .operators:hover{
+      background-color:none;
+   }
+   .operators:active{
+      background-color:none;
+   }
+   .equal:hover{ 
+   background-color:none;
+   }
+   .equal:active{
+    background-color:none;
+   }
