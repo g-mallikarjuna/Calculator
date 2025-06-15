@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+.calculator {
+  background-color: #2e2e2e;
+  max-width:min-content;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  font-family:"Inter", sans-serif;
+  overflow: hidden;
+}
+.display-screen {
+  width: 100%;
+   padding-right: 20px;
+  font-size: 4rem;
+  text-align: left;
+  background-color: #4d4c4c;
+  border: none;
+  color: white;
+  overflow-x: auto;
+  white-space:nowrap;
+  outline: none;
+}
+.innercontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  
+}
+
+ button {
+  width: 100px;
+  height: 100px;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 50px ;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+ 
+button:hover {
+  background-color: #888;
+}
+ button:active{
+  background-color: #4d4c4c;
+  
+}
+.equal{
+  background-color: rgb(62, 62, 234);
+}
+.equal:hover{
+  background-color: rgb(112, 119, 218);
+}
+.equal:active{
+  background-color: rgb(62, 62, 220);
+
+}
+
+ .innercontainer > .operators{
+  background-color: hsl(39, 100%, 55%);
+}
+.innercontainer > .operators:hover{
+  background-color: hsl(39, 100%, 40%);
+}
+ .innercontainer > .operators:active{
+  background-color: hsl(39, 100%, 70%);
+
+ }
+
+ @media screen and (max-width:750px) {
+    .innercontainer > button{
+      width: 50px;
+      height: 50px;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .display-screen{
+      font-size: 2rem;
+      border: none;
+      width: 100%;
+       border: none;
+       outline: none;
+    }
+ }
